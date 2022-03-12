@@ -1,1 +1,4 @@
 .env
+.DS_Store
+combined_csv.csv
+headlines/
