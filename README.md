@@ -17,9 +17,9 @@ In this project, we aim to identify the periods of war and the sentiment of news
 * [License](#license)
 
 ---
-## Goals
+## Goals 
 Our goal is to compare two or more machine-learning models for identifying price and price direction of oil. For our predictions, we will use natural language processing to draw insights from news articles for the past 22 years. In addition, we will use oil close prices/returns, gold prices, S&P 500, as well as times of unrest (Iraq War 2003-2011). Machine learning typically requires extensive data preparation before the model can be trained. We will use Jupyter to prepare a training and testing dataset, and to train and compare the machine-learning model.
-
+---
 ## Technologies
 Our portfolio analysis will use the following technologies: 
 * pandas
@@ -33,13 +33,18 @@ Our portfolio analysis will use the following technologies:
 * New York Times API 
 * yfinance API
 * warnings
+* tensorflow
 
 ---
 [![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/) </br>
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try) </br>
 
 ## Instructions
-
+1. To get the project started on your local machine, clone the GitHub repository. 
+2. The first file we want to run is the [crude_news_data](crude_news_data.ipynb). This will get the New York Times API data for a set amount of years. *This may take around 45 minutes to run...*
+3. The end result of this notebook will export a [combined_csv](combined_csv.csv) file in a headlines folder, with all other articles throughout each month. 
+4. Next, we use the [crude_sentiments](crude_sentiments.ipynb) notebook that will get the news data from the [combined_csv](combined_csv.csv) and run a sentiment analysis which will export an [oil_sentiments](oil_sentiments.csv) csv file. 
+5. Once we have the sentiment analysis data, we will load historical oil data and apply time series analysis and modeling to determine whether there is any predictable behavior in the [oil_sentiment_analysis](oil_sentiment_analysis.ipynb) notebook. 
 
 ## Conclusion
 Predicting price using 2 of the regression models, and comparing the performance. 2nd predicting the direction of return using classification model and comapring the 2 classification models. 
@@ -87,7 +92,6 @@ Our team:
 [Yahoo Finance](https://ca.finance.yahoo.com/ ) <br />
 [How to Collect Data From The New York Times Over Any Period of Time](https://towardsdatascience.com/collecting-data-from-the-new-york-times-over-any-period-of-time-3e365504004 ) <br />
 [New York Times API](https://developer.nytimes.com/apis ) <br />
-
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
