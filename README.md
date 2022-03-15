@@ -1,7 +1,7 @@
 # Oil and Machine Learning
 
 ## Description
-In this project, we aim to use machine models to help predict the price and price direction of oil. 
+In this project, we aim to use machine learning models to help predict the price and price direction of oil. 
 
 ---
 ## Table of Contents
